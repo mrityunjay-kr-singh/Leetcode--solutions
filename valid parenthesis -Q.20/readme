@@ -1,0 +1,35 @@
+# Valid Parentheses Checker Using Stack
+
+This  is a approach of a simple Python program that checks whether the parentheses/brackets in a string are valid or not using the Stack data structure.
+
+## Brackets Supported
+
+- `()`
+- `[]`
+- `{}`
+
+---
+
+## How the Code Works
+
+- Every character is pushed into the stack
+- The program checks the top two elements of the stack
+- If the top two elements form:
+  - `()`
+  - `[]`
+  - `{}`
+  
+  then both elements are removed using `pop()`
+
+- At the end:
+  - Empty stack → Valid Parentheses
+  - Non-empty stack → Invalid Parentheses
+
+---
+
+## Example
+
+### Input
+
+```python
+s = "({[]})"
